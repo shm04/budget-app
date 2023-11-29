@@ -1,0 +1,38 @@
+<%= stylesheet_link_tag "application", "navbar" %>
+
+<nav class="navbar">
+  <a class="navbar-title" href="<%= root_path %>">Wise Wallet</a>
+  <% if controller_name == 'groups' && action_name != 'new' %>
+  <li class="nav-item">
+    Categories
+  </li>
+<% elsif controller_name == 'entities' && action_name != 'new' %>
+  <li class="nav-item">
+    Transactions
+  </li>
+<% elsif controller_name == 'groups' && action_name == 'new' %>
+  <li class="nav-item">
+    New Category
+  </li>
+<% elsif controller_name == 'entities' && action_name == 'new' %>
+  <li class="nav-item">
+    New Transaction
+  </li>
+<% end %>
+
+
+    <ul class="navbar-ul">
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+        </li>
+      <% end %>
+    </ul>
+</nav>

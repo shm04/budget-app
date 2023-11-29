@@ -1,0 +1,23 @@
+<%= stylesheet_link_tag "application", "entities_index" %>
+
+<div class="total-amount">
+<p><%= @group.name %></p>
+<p class="amount">$<%= @total_amount %></p>
+</div>
+
+<table>
+  <tbody>
+    <% @entities.each do |entity| %>
+      <tr>
+        <td><%= entity.name %></td>
+        <td><%= entity.amount %></td>
+        <td><%= entity.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="btn-cont">
+<%= link_to 'New Transaction', new_group_entity_path(@group) %>
+</div>
+<%= link_to 'Back', groups_path %>

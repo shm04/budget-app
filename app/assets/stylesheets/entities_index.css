@@ -1,0 +1,25 @@
+.total-amount {
+    border-bottom: solid 1px gray;
+    background-color: white;
+    margin: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    color: gray;
+    padding: 0 15px;
+}
+
+.amount {
+    color: black;
+}
+
+.btn-cont {
+    border: solid 1px #60B625;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #60B625;
+}

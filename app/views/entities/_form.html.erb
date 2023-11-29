@@ -1,0 +1,18 @@
+<%= form_with(model: [@group, entity]) do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.text_field :amount %>
+  </div>
+  
+  <%= form.hidden_field :group_id, value: @group.id %>
+  <%= form.hidden_field :author_id, value: current_user.id %>
+
+  <div class="actions">
+    <%= form.submit 'Create Transaction' %>
+  </div>
+<% end %>
