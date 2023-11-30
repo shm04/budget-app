@@ -1,18 +1,21 @@
-<%= form_with(model: [@group, entity]) do |form| %>
+<%= stylesheet_link_tag "application", "entities_form" %>
+
+<%= form_with(model: [@group, entity], remote: true) do |form| %>
+<div class="form">
+  <div class="inputs">
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
+  <div class="field-two">
     <%= form.label :amount %>
-    <%= form.text_field :amount %>
+    <%= form.number_field :amount %>
   </div>
-  
-  <%= form.hidden_field :group_id, value: @group.id %>
-  <%= form.hidden_field :author_id, value: current_user.id %>
+  </div>
 
-  <div class="actions">
-    <%= form.submit 'Create Transaction' %>
+  <div class="field-three">
+    <%= form.submit 'Create Transaction', class: 'button' %>
   </div>
+   </div>
 <% end %>

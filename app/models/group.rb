@@ -1,4 +1,3 @@
 class Group < ApplicationRecord
-    has_many :entities
-  end
-  
+  has_many :entities, dependent: :destroy
+end

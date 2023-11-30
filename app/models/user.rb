@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   has_many :entities, foreign_key: :author_id, dependent: :destroy
-  
+
   has_many :user_groups
   has_many :groups, through: :user_groups, class_name: 'UserGroup'
 end

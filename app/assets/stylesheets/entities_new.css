@@ -1,0 +1,15 @@
+.back-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.back-btn a {
+  padding: 20px 30px;
+  border: solid 1px gray;
+  width: 30%;
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-size: 20px;
+  text-align: center;
+}

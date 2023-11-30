@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.field,
+.field-two {
+  padding-bottom: 20px;
+}
+
+.field label {
+  padding-right: 28px;
+  font-size: 20px;
+}
+
+.field-two label {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.field-three {
+  margin-top: 20px;
+  width: 100vw;
+  border: solid 1px #60b625;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #60b625;
+  padding: 20px 0;
+  justify-self: flex-end;
+}
+
+.button {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border: solid 1px white;
+  width: 84%;
+  text-align: center;
+  background-color: #60b625;
+}
