@@ -1,11 +1,8 @@
 class GroupsController < ApplicationController
-  def index
-    @groups = Group.all
-  end
+  before_action :authenticate_user!, only: %i[new create]
 
-  def show
-    @group = Group.find(params[:id])
-    redirect_to group_entities_path(@group)
+  def index
+    @groups = current_user.groups
   end
 
   def new
@@ -14,6 +11,7 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.new(group_params)
+    @group.user_id = current_user.id
 
     if @group.save
       redirect_to groups_path, notice: 'Group was successfully created.'
