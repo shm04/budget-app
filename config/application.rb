@@ -10,7 +10,7 @@ module BudgetApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
-    config.secret_key_base = Rails.application.credentials.secret_key_base
+    config.secret_key_base = ENV["secret_key_base"]
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
