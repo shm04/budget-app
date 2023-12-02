@@ -1,0 +1,60 @@
+.total-amount {
+  border-bottom: solid 1px gray;
+  background-color: white;
+  margin: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+  color: gray;
+  padding: 0 15px;
+}
+
+.amount {
+  font-size: 25px;
+  margin: 0;
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+.btn-cont {
+  border: solid 1px #60b625;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #60b625;
+}
+
+.back-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.back-btn a {
+  padding: 20px 30px;
+  border: solid 1px gray;
+  width: 30%;
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  font-size: 20px;
+  text-align: center;
+}
+
+.cat-name {
+  font-size: 28px;
+  text-decoration: none;
+  color: gray;
+  margin: 0;
+}
+
+.delete-btn {
+  margin: 16px 0;
+  margin-left: 117px;
+  border: solid 1px gray;
+  color: rgb(93, 93, 93);
+  background-color: white;
+  border-radius: 5px;
+}

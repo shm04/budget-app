@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag "application", "groups_form" %>
+
+<%= form_with(model: group, local: true) do |form| %>
+<div class="form">
+  <div class="inputs">
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field-two">
+    <%= form.label :icon %>
+    <%= form.select :icon, ['Transport', 'Food', 'Clothing', 'Shopping', 'Health', 'Utility', 'Education', 'Entertainment'], { prompt: 'Select an option' }, class: 'form-control' %>
+  </div>
+</div>
+  <div class="field-three">
+    <%= form.submit 'Add Category', class: 'button' %>
+  </div>
+  </div>
+<% end %>
+

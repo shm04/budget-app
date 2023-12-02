@@ -1,0 +1,13 @@
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  margin: 15px;
+}
+
+.links {
+  margin-top: 20px;
+}

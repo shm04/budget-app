@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #336daf;
+}
+
+.navbar-title {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  list-style: none;
+}
+
+.navbar-ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding-right: 15px;
+}
+
+.nav-item button {
+  background-color: #336daf;
+  color: white;
+  border: none;
+  font-size: 20px;
+}

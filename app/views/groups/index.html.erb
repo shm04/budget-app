@@ -1,0 +1,24 @@
+<%= stylesheet_link_tag "application", "groups_index" %>
+
+<div class="total-amount">
+  <p><%= current_user.name %></p>
+</div>
+
+<div class="main-container">
+  <% @groups.each do |group| %>
+    <div class="categories-container">
+      <img class="icon" src="<%= asset_path(group.icon) %>" width="50" height="50" />
+      <div class="child-cont">
+        <%= link_to group.name, group_path(group), class: 'cat-name' %>
+        <p class="created-at"><%= group.created_at.strftime("%d %b %Y") %></p>
+      </div>
+      <div class="child-cont">
+        <p class="amount">$<%= group.entities.sum(:amount)%></p>
+        <%= button_to 'Delete', group_path(group), method: :delete, class: 'delete-btn' %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<div class="btn-cont">
+  <%= link_to 'Add a new category', new_group_path %>
+</div>
