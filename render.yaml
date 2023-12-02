@@ -1,6 +1,6 @@
 databases:
   - name: budgetapp
-    databaseName: budget_app_development
+    databaseName: budgetapp
     user: sebastianhm
 
 services:
