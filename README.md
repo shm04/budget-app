@@ -62,7 +62,7 @@ Effortlessly monitor and control your finances with the convenience of this web 
 
 ## :tv: Video Presentation <a name="video"></a>
 
-[Video](https://drive.google.com/file/d/1xQG_HgYMIbGelJ6hH1KvukTgX4OdOSb0/view?usp=sharing)
+[Video](https://www.loom.com/share/c5251888819541fa9953a17bb3cc89c1?sid=a586da94-3da7-4b47-843b-bfadaf26030d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
