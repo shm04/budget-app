@@ -5,6 +5,11 @@ class GroupsController < ApplicationController
     @groups = current_user.groups
   end
 
+  def show
+    @group = Group.find(params[:id])
+    redirect_to group_entities_path(@group)
+  end
+
   def new
     @group = Group.new
   end
