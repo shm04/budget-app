@@ -56,7 +56,7 @@ Effortlessly monitor and control your finances with the convenience of this web 
 
 ## 🚀Live Demo <a name="demo"></a>
 
-[Live Demo](https://wise-wallet-6rja.onrender.com)
+[Live Demo](https://)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,8 +65,6 @@ Effortlessly monitor and control your finances with the convenience of this web 
 [Video](https://drive.google.com/file/d/1xQG_HgYMIbGelJ6hH1KvukTgX4OdOSb0/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
